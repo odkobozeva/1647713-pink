@@ -1,0 +1,24 @@
+.page-footer {
+    padding: 40px 20px;
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.page-footer__logo {
+    display: block;
+
+    @media (max-width: $mobile-width-only) {
+        margin-bottom: 35px;
+    }
+}
+
+.page-footer__social {
+    @media (max-width: $mobile-width-only) {
+        margin-bottom: 40px;
+    }
+}

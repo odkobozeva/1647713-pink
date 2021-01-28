@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="icon" href="img/favicon.ico" sizes="16x16 32x32" type="image/x-icon">
+  <title></title>
+</head>
+
+<body class="page__body">
+    <!-- Стили для проверки Pixel Perfect. Начало -->
+    <style>
+      html {
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+  
+      @media (width: 320px) {
+        html {
+          background-image: url("img/Mobile.jpg");
+        }
+      }
+  
+      @media (width: 660px) {
+        html {
+          background-image: url("img/Tablet.jpg");
+        }
+      }
+  
+      @media (width: 1200px) {
+        html {
+          background-image: url("img/Desktop.jpg");
+        }
+      }
+  
+      body {
+        opacity: 1;
+      }
+    </style>
+    <!-- Стили для проверки Pixel Perfect. Конец -->
+
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <a class="page-header__logo"><img src="https://via.placeholder.com/75x25" alt=""></a>
+      <button class="page-header__toggle page-header__toggle--opened" type="button" aria-label="Переключение меню"></button>
+    </div>
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#!">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#!">Фотографии</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#!">Конкурс</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#!">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="downloads">
+      <h2 class="downloads__title">Взгляните&nbsp;<br class="mobile-display-none">на жизнь&nbsp;<br>иначе!</h2>
+      <div class="downloads__image">
+        <img src="https://via.placeholder.com/320x290" alt=""  width="320" height="280">
+      </div>
+      <div class="downloads__wrapper">
+          <a class="downloads__button" href="#!">Скачать приложение</a>
+          <ul class="downloads__list">
+            <li class="downloads__item">
+              <a class="downloads__link" href="#!">
+                <img src="https://via.placeholder.com/50" alt="">
+              </a>
+            </li>
+            <li class="downloads__item">
+              <a class="downloads__link" href="#!">
+                <img src="https://via.placeholder.com/50" alt="">
+              </a>
+            </li>
+            <li class="downloads__item">
+              <a class="downloads__link" href="#!">
+                <img src="https://via.placeholder.com/50" alt="">
+              </a>
+            </li>
+          </ul>
+          <p class="downloads__description">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
+      </div>
+    </section>
+
+    <section class="advantages">
+      <div class="advantages__info">
+        <p class="advantages__text">Устали от серости мегаполиса?</p>
+        <p class="advantages__text">Нам есть, что вам <br>предложить!</p>
+      </div>
+        <ul class="advantages__list">
+        <li class="advantages__item advantages__item--screen-1">
+          <h2 class="advantages__title">Поднимает&nbsp;<br>настроение</h2>
+          <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+            несколько кликов!</p>
+        </li>
+        <li class="advantages__item advantages__item--screen-2">
+          <h2 class="advantages__title">Меняет мир&nbsp;<br>вокруг</h2>
+          <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+            усилить эффект</p>
+        </li>
+        <li class="advantages__item advantages__item--screen-3">
+          <h2 class="advantages__title">Заводит&nbsp;<br>новых друзей</h2>
+          <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
+            новых</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="research">
+      <div class="research__image">
+        <img class="research__img" src="https://via.placeholder.com/50" alt="" width="238" height="276">
+      </div>
+      <div class="research__info">
+        <h2 class="research__title">Эффект <br>на 24 часа!</h2>
+        <p class="research__description">Британские ученые провели исследования и доказали, что положительный эффект
+          от использования приложения длится целые сутки!</p>
+        <a class="research__link" href="#!">Узнать больше об исследовании</a>
+      </div>
+    </section>
+    
+    <section class="reviews">
+      <ul class="reviews__list">
+        <li class="reviews__item">
+          <blockquote class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому
+            взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+            фотографии!»
+          </blockquote>
+          <p class="reviews__author">Николай Петров</p>
+          <p class="reviews__author-info">25 лет, водитель трамвая</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="price">
+      <table class="price__table">
+        <tbody>
+          <tr class="price__row">
+            <td class="price__data"></td>
+            <td class="price__data price__header">
+              <h3 class="price__name">База</h3>
+              <p class="price__coast">1,99 USD</p>
+            </td>
+            <td class="price__data price__header">
+              <h3 class="price__name">Стандарт</h3>
+              <p class="price__coast">3,99 USD</p>
+            </td>
+            <td class="price__data price__header">
+              <h3 class="price__name">Анлим</h3>
+              <p class="price__coast">9,99 USD</p>
+            </td>
+          </tr>
+          <tr class="price__row">
+            <td class="price__data">Розовый фильтр</td>
+            <td class="price__data">х</td>
+            <td class="price__data">х</td>
+            <td class="price__data">х</td>
+          </tr>
+          <tr class="price__row">
+            <td class="price__data">Смайлики</td>
+            <td class="price__data">х</td>
+            <td class="price__data">х</td>
+            <td class="price__data">х</td>
+          </tr>
+          <tr class="price__row">
+            <td class="price__data">Комментарии</td>
+            <td class="price__data">х</td>
+            <td class="price__data">х</td>
+            <td class="price__data">х</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="contacts">
+      <p class="contacts__text">Остались вопросы?<br>Свяжитесь с нами!</p>
+      <ul class="contacts__list">
+        <li class="contacts__item">
+          <h3 class="contacts__title">Звоните:</h3>
+          <a class="contacts__link" href="#!">+7 (812) 555-66-66</a>
+        </li>
+        <li class="contacts__item contacts__item--email">
+          <h3 class="contacts__title">Пишите:</h3>
+          <a class="contacts__link" href="#!">mail@htmlacademy.ru</a>
+        </li>
+        <li class="contacts__item">
+          <h3 class="contacts__title">Приезжайте в гости:</h3>
+          <a class="contacts__link" href="#!">ул. Большая<br>Конюшенная, 19/8</a>
+        </li>
+      </ul>
+      <div class="contacts__map">
+        <img class="contacts__image" src="https://via.placeholder.com/320x200" alt="" width="320" height="200">
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <a class="page-footer__logo logo"><img src="https://via.placeholder.com/150x40" alt="" width="150" height="40"></a>
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link" href="#!"><img src="https://via.placeholder.com/50" alt="" width="50" height="50"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#!"><img src="https://via.placeholder.com/50" alt="" width="50" height="50"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#!"><img src="https://via.placeholder.com/50" alt="" width="50" height="50"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <a class="copyright__link" href="#!">
+        <p class="copyright__text">Разработано</p>
+        <img src="https://via.placeholder.com/27x35" alt="" width="27" height="34">
+      </a>
+    </div>
+  </footer>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

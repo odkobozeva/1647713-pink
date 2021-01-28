@@ -1,0 +1,19 @@
+// Global
+@import "global/variables.scss";
+@import "global/fonts.scss";
+@import "global/common.scss";
+
+@import "common/page.scss";
+@import "common/page-header.scss";
+@import "common/container.scss";
+@import "common/main-nav.scss";
+@import "common/page-footer.scss";
+@import "common/social.scss";
+@import "common/copyright.scss";
+
+@import "index/downloads.scss";
+@import "index/advantages.scss";
+@import "index/research.scss";
+@import "index/reviews.scss";
+@import "index/price.scss";
+@import "index/contacts.scss";

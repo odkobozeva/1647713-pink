@@ -1,0 +1,107 @@
+.downloads {
+    padding: 25px 0;
+    background-color: $background-dark;
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2,auto);
+        padding: 75px 0 125px;
+      }
+
+    @media (min-width: $desktop-width) {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 79px 0px 125px 96px;
+      }
+}
+
+.downloads__title {
+    padding: 0 20px;
+    margin-bottom: 25px;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 300;
+    color: $light-text;
+
+    @media (min-width: $tablet-width) {
+        margin: 20px 0 5px 8px;
+        font-size: 40px;
+        line-height: 1.2;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin: 21px 0 12px 0px;
+        font-size: 50px;
+        line-height: 68px;
+    }
+}
+
+.downloads__image {
+    @media (min-width: $tablet-width) {
+        grid-column: 2/-1;
+        grid-row: 1/-1;
+        padding: 54px 94px 35px 39px;
+      }
+
+      @media (min-width: $desktop-width) {
+        padding: 80px 250px 50px 250px;
+    }
+
+    & img {
+        height: 100%;
+    }
+}
+
+.downloads__button {
+    display: block;
+    padding: 15px;
+    margin: 25px 20px 35px;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 700;
+    color: $light-text;    
+    border: 3px solid;
+    border-radius: 29px;
+
+    @media (min-width: $tablet-width) {
+        margin: 25px 10px 50px 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+        font-size: 21px;
+        margin: 24px 35px 70px;
+    }
+}
+
+.downloads__list {
+    display: flex;
+    margin-bottom: 23px;
+    justify-content: center;
+    
+    @media (min-width: $desktop-width) {
+        margin-bottom: 54px;
+    }
+}
+
+.downloads__description {
+    font-size: 14px;
+    line-height: 1.71;
+    font-weight: 300;
+    color: $light-text;
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+        margin-left: 10px;
+        font-size: 18px;
+        line-height: 1.33;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin-left: 0;
+    }
+}
+
+.downloads__item:not(:last-child) {
+    margin-right: 30px;
+}

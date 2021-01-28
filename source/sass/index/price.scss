@@ -1,0 +1,44 @@
+.price {
+    padding: 50px 0;
+    height: 480px;
+    background-color: $background-light;
+
+    @media (min-width: $tablet-width) {
+        height: 365px;
+    }
+
+    @media (min-width: $desktop-width) {
+        height: 534px;
+    }
+}
+
+.price__table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.price__header {
+    padding: 20px 50px;
+    color: $light-text;
+    background-color: $background-dark;
+    text-align: center;
+}
+
+.price__name {
+    font-size: 16px;
+    line-height: 1.87;
+    text-transform: uppercase;
+}
+
+.price__coast {
+    font-size: 18px;
+    line-height: 1.67;
+}
+
+.price__data {
+    padding: 25px 20px;
+    font-size: 14px;
+    line-height: 2.14;
+    border: 2px solid $border-light;
+}
